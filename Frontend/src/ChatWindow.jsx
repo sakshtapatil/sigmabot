@@ -44,7 +44,7 @@ function ChatWindow() {
 
         try {
             const response = await fetch(
-                "http://localhost:5000/api/chat",
+               "https://sigmagpt-snv0.onrender.com/api/chat",
                 options
             );
 

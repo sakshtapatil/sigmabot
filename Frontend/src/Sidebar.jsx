@@ -19,7 +19,7 @@ function Sidebar() {
 
     const getAllThreads = async () => {
         try {
-            const response = await fetch("http://localhost:5000/api/thread", {
+            const response = await fetch("https://sigmagpt-snv0.onrender.com/api/thread", {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -60,7 +60,7 @@ function Sidebar() {
 
         try {
             const response = await fetch(
-                `http://localhost:5000/api/thread/${newThreadId}`,
+               `https://sigmagpt-snv0.onrender.com/api/thread/${newThreadId}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -86,7 +86,7 @@ function Sidebar() {
     const deleteThread = async (threadId) => {
         try {
             const response = await fetch(
-                `http://localhost:5000/api/thread/${threadId}`,
+               `https://sigmagpt-snv0.onrender.com/api/thread/${newThreadId}`,
                 {
                     method: "DELETE",
                     headers: {
